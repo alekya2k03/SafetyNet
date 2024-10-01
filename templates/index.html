@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/f780059320.js" crossorigin="anonymous"></script>
+    <title>Safety Net</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="user">
+            <img src="../static/PPE.png.webp" alt="PPE detection logo">
+            <h3 class="name"><span>SafetyNet</span></h3>
+            <p class="post">YOLO v9 model</p>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#try">TRY MODEL</a></li>
+                <li><a href="#abstract">ABSTRACT</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="home" id="home">
+
+        <h3></h3>
+        <h2>VARDHAMAN COLLEGE OF ENGINEERING<span></span></h2>
+        <p><span>Electronics and Communication Engineering.</span>
+        </p>
+        <div>
+            <a href="#try"><button class="btn">Try Model</button></a>
+            <a href="#abstract"><button class="btn">Abstract</button></a>
+        </div>
+
+
+    </section>
+
+    <section class="try" id="try">
+
+        <h1 class="heading"> Try <span>Model</span> </h1>
+        <div class="cont">
+
+            <form action="/edit" method="post" enctype="multipart/form-data">
+
+                <div>
+                    <label for="formFile" class="form-label">Select an Image to detect</label>
+                    <input class="form-control" type="file" name="file" id="formFile">
+                </div>
+
+                <button type="submit" class="btn btn-success">Submit</button>
+
+            </form>
+        </div>
+        <div class="images">
+            <label>
+                <p>Input Image:</p>
+                <img src="{{ url_for('input_file') }}">
+            </label>
+            <label>
+                <p>Output Image:</p>
+                <img src="{{ url_for('output_file') }}">
+            </label>
+        </div>
+
+
+    </section>
+
+
+    <section class="abstract" id="abstract">
+
+        <h1 class="heading"> <span>Abstract</span> </h1>
+        <p>
+            Personal Protective Equipment (PPE) Detection is a comprehensive industrial safety and
+            surveillance system designed to enhance workplace safety and security. Leveraging live video
+            streams from multiple areas within an industrial environment, it utilizes advanced computer vision
+            and deep learning to ensure Worker Safety by detecting and promoting the correct usage of safety
+            guards (helmet, safety vests, boots) using yolo v9. The purpose of PPE Detection is to enhance
+            safety and security in industrial environments through advanced video surveillance and
+            monitoring. PPE Detection relies on computer vision techniques, including object detection and
+            recognition, to analyze live video streams from industrial cameras. Deep learning models, such as
+            Convolutional Neural Networks (CNNs), play a pivotal role in identifying workers safety equipment.
+            These models have the capability to accurately determine if workers are wearing helmet, safety
+            vests, and boots.
+        </p>
+
+        <p><span>Key Words: </span>Computer vision, Object detection and recognition, Workers safety, Deep learning,
+            YOLO v9.</p>
+
+
+    </section>
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>About</span> Us </h1>
+        <h2 class="title"><span> TEAM MEMBERS </span>(Team no. 335)</h2>
+        <div class="info">
+            <h3> <span>22885A0416 </span> Kasoju Alekya</h3>
+            <h3> <span>21881A04E4 </span>Gaddam Sai Priya </h3>
+            <h3> <span>21881A04D0 </span>Alli Sai Teja</h3>
+            <h3> <span><strong>Name of the Guide: </strong></span> Dr. D. Praveen Kumar, Asst. Prof, ECE</h3>
+        </div>
+        <h2 class="title"><span>CONTACT INFO</span></h2>
+
+        <div class="contact">
+            <h3> <i class="fas fa-phone"></i> +91-7894561230 </h3>
+            <h3 class="lowercase"> <i class="fa-solid fa-envelope"></i> safetynet@gmail.com </h3>
+            <h3> <i class="fas fa-map-marker-alt"></i> hyderabad, india - 500001</h3>
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
